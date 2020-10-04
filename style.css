@@ -41,6 +41,28 @@ width: 100%;
        display: none;
    }
    /*FIN MENU INFO*/
+
+
+   /*-----HERBERGEMENT------*/
+
+   #mainHebergement{
+      flex-direction: column-reverse;
+   }
+   
+   #hebergement{
+       flex-direction: column;
+       width: 100%;
+   }
+
+   #part1{
+       flex-direction: column;
+   }
+
+   #part2{
+       flex-direction: column;
+   }
+
+   /*FIN HEBERGEMENT*/
 }
 
 
@@ -123,3 +145,74 @@ width: 100%;
 .introBold{
     font-weight: bold;
 }
+
+
+   /*-----HERBERGEMENT------*/
+
+#mainHebergement{
+    width: 98%;
+    margin: auto;
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+
+#hebergement{
+   border: 2px solid green;
+   background-color:#F2F2F2 ;
+ 
+}
+
+#part1{
+    display: flex;
+    justify-content: space-between;
+}
+
+#part2{
+    display: flex;
+    justify-content: space-between;
+}
+
+figure{
+    border: 3px solid white;
+    background-color: white;
+    border-radius: 10px;
+}
+
+figure img{
+   border: 2px solid black;
+   border-radius: 20px;
+}
+
+
+figcaption{
+    background-color: white;
+    border: 2px solid white;
+}
+ 
+#populaire{
+    border: 2px solid red;
+    margin-left: 2px;
+    background-color:#F2F2F2 ;
+}
+
+
+#populaire figure{
+    border: 3px solid red;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+}
+
+#populaire figure img{
+   border: 2px solid black;
+   border-radius: 20px;
+}
+
+
+#populaire figcaption{
+    background-color: red;
+    border: 2px solid white;
+}
+
+   /*-----FIN HERBERGEMENT------*/
