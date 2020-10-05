@@ -52,6 +52,7 @@ width: 100%;
    #hebergement{
        flex-direction: column;
        width: 100%;
+       margin: auto;
    }
 
    #part1{
@@ -62,7 +63,18 @@ width: 100%;
        flex-direction: column;
    }
 
+   #populaire{
+       width: 100%;
+       margin: auto;
+   }
+
    /*FIN HEBERGEMENT*/
+
+    /*ACTIVITES*/
+
+
+    /*FIN ACTIVITE*/
+
 }
 
 
@@ -154,10 +166,11 @@ width: 100%;
     margin: auto;
     border: 2px solid black;
     display: flex;
-    justify-content: space-between;
+    
 }
 
 #hebergement{
+    width: 75%;
    border: 2px solid green;
    background-color:#F2F2F2 ;
  
@@ -166,11 +179,13 @@ width: 100%;
 #part1{
     display: flex;
     justify-content: space-between;
+   
 }
 
 #part2{
     display: flex;
     justify-content: space-between;
+    
 }
 
 figure{
@@ -216,3 +231,50 @@ figcaption{
 }
 
    /*-----FIN HERBERGEMENT------*/
+
+
+   /*-----ACTIVITÉ------*/
+
+   #activite{
+       display: flex;
+       justify-content: space-between;
+       width: 100%;
+   }
+
+
+   #activite figure{
+    border: 3px solid red;
+    background-color: white;
+    border-radius: 10px;
+  
+   }
+
+   #activite figure img{
+    border: 2px solid black;
+    border-radius: 20px;
+   }
+
+   #populaire figcaption{
+    background-color: red;
+    border: 2px solid white;
+   }
+
+
+ /*-----FIN ACTIVITÉ------*/
+
+/*-----FOOTER------*/
+
+footer{
+    
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    background-color: #F2F2F2;
+}
+
+
+
+
+
+/*-----FIN FOOTER------*/
