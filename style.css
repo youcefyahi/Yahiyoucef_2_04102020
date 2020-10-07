@@ -12,7 +12,7 @@ font-family: 'Raleway', sans-serif;
 
 /*-------------DEBUT ECRAN IPHONE 8--------------- */
 
-@media screen and (min-width:320px) and (max-width:992px){
+@media screen and (min-width:320px) and (max-width:812px){
    
    /*HEADER*/ 
     #header_pc{
@@ -78,33 +78,26 @@ font-family: 'Raleway', sans-serif;
 }
     /*FIN ACTIVITE*/
 
-}
-
 footer{
-    flex-direction: column;
-  
+    background-color: #F2F2F2;
+  display: inline;
+ 
 }
 
-
-
-
-
-
-
-
+}
 
 /*-------------FIN ECRAN IPHONE 8--------------- */
 
-/*-----------ECRAN TABLETTE------------------/*
+/*-----------ECRAN TABLETTE------------------*/
 
 
-
-
-
-
-
-
-
+@media screen and (min-width:768px) and (max-width:1366px){
+    #mainHebergement{
+        color: red;
+        display: inline;
+        flex-direction: column-reverse;
+    }
+}
 
 
 /*-----------FIN ECRAN TABLETTE------------------/*
@@ -112,7 +105,7 @@ footer{
 
 /*-------------ECRAN PC--------------- */
 
-@media screen and (min-width: 992px){
+@media screen and (min-width:1024px) and (max-width:1920px){
     /*HEADER*/ 
     #header_iphone{
         display: none;
@@ -173,7 +166,17 @@ footer{
 #menu_iphone ul li{
     display: inline;
 }
+
 /*------FIN MENU INFO-------*/
+footer{
+    
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
 }
 
 
@@ -189,16 +192,16 @@ footer{
    /*-----HERBERGEMENT------*/
 
 #mainHebergement{
+    display: flex;
     justify-content: space-between;
     border: 2px solid black;
-    display: flex;
+    
     
 }
 
 #hebergement{
     padding: 10px 15px;
-    
-   background-color:#F2F2F2 ;
+    background-color:#F2F2F2 ;
  
 }
 
@@ -215,18 +218,19 @@ footer{
 }
 
 figure{
+    box-shadow: 10px 5px 5px 5px white;
     border: 3px solid white;
     background-color: white;
     border-radius: 10px;
 }
 
 figure img{
-   border: 2px solid black;
    border-radius: 20px;
 }
 
 
 figcaption{
+    box-shadow: 10px 5px 5px 5px white;
     background-color: white;
     border: 2px solid white;
 }
@@ -244,7 +248,8 @@ figcaption{
 
 
 #populaire figure{
- 
+
+    box-shadow: 10px 5px 5px 5px white;
     background-color: white;
     border-radius: 10px;
     display: flex;
@@ -274,15 +279,20 @@ figcaption{
 
 
    #activite figure{
-    border: 3px solid red;
-    background-color: white;
+   
+    box-shadow: 10px 5px 5px 5px #F2F2F2;
+    text-align: center;
     border-radius: 10px;
   
    }
 
    #activite figure img{
-    border: 2px solid black;
     border-radius: 20px;
+   }
+
+   #activite figure figcaption{
+    border: 1px solid white;
+    background-color: white;
    }
 
    #populaire figcaption{
@@ -294,16 +304,12 @@ figcaption{
  /*-----FIN ACTIVITÉ------*/
 
 /*-----FOOTER------*/
-
 footer{
-    
-    width: 100%;
-    margin: auto;
-    display: flex;
-    justify-content: space-around;
     background-color: #F2F2F2;
 }
-
+footer ul li{
+    list-style-type: none;
+}
 
 
 
