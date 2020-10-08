@@ -22,7 +22,8 @@ font-family: 'Raleway', sans-serif;
     #header_iphone{
         display: flex;
         justify-content: space-between;
-        color: red;
+        color: #0065FC;
+        font-weight: bold;
     }
 
     #header_iphone ul li {
@@ -35,17 +36,51 @@ font-family: 'Raleway', sans-serif;
         justify-content: space-around;
     }
 
+    #nav_iphone a{
+        width:100% ;
+        text-align: center;
+        text-decoration: none;
+        color: #0065FC;
+    }
+
+    #nav_iphone a:hover{
+        border-bottom: 2px solid #0065FC;
+    }
+
+ 
+
    /*FIN HEADER*/ 
 
    /*MENU INFO*/
    #menu_pc{
        display: none;
    }
+
+   #filtre_iphone ul li{
+       list-style-type: none;
+       margin-right: 5px;
+       border: 2px solid #0065FC;
+       border-radius: 10px;
+       width: 50%;
+   }
+
+   #recherch_iphone button{
+    background-color: #0065FC;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius:10px ;
+    color:white;
+   }
+
+   .filtreBold{
+       font-weight: bold;
+   }
    /*FIN MENU INFO*/
 
 
    /*-----HERBERGEMENT------*/
-
+section{
+    padding: 20px 20px;
+}
    #mainHebergement{
       flex-direction: column-reverse;
    }
@@ -79,8 +114,8 @@ font-family: 'Raleway', sans-serif;
     /*FIN ACTIVITE*/
 
 footer{
-    background-color: #F2F2F2;
-  display: inline;
+    background-color: red;
+    display: inline;
  
 }
 
@@ -93,7 +128,7 @@ footer{
 
 @media screen and (min-width:768px) and (max-width:1366px){
     #mainHebergement{
-        color: red;
+        
         display: inline;
         flex-direction: column-reverse;
     }
@@ -194,8 +229,6 @@ footer{
 #mainHebergement{
     display: flex;
     justify-content: space-between;
-    border: 2px solid black;
-    
     
 }
 
