@@ -3,28 +3,32 @@ margin: auto;
 padding:auto;
 width: 100%;
 font-family: 'Raleway', sans-serif;
+
 }
 
 
 
 
 
-#header_iphone{
-    display: none;
-}
 
-#header_pc{
+#header{
     display: flex;
     justify-content: space-between;
 }
 
-#header_pc ul li {
+.reservia{
+    max-width: 80px;
+    
+}
+
+#header ul li {
     list-style-type: none;
     display: inline;
     margin-right: 10px;
+    
 }
 
-#header_pc ul li:hover{
+#header ul li:hover{
     border-top: 2px solid #0065FC;
     color:  #0065FC;
 }
@@ -34,20 +38,15 @@ font-family: 'Raleway', sans-serif;
     color: #0065FC;
 }
 
-#nav_iphone{
-    font-weight: bolder;
-    display: none;
-}
 
-#menu_iphone{
-    display: none;
-}
+
+
 /*HEADER*/
 
 /*------MENU INFO-------*/
 
 
-#recherche_pc{
+#recherche{
 display: flex;
 
 }
@@ -55,7 +54,7 @@ display: flex;
 
 
 
-#recherche_pc button{
+#recherche button{
 background-color: #0065FC;
 border-top-right-radius: 10px;
 border-bottom-right-radius:10px ;
@@ -64,24 +63,44 @@ color:white;
 
 }
 
-#filtre_pc ul li{
+#filtre{
+    margin-top: 30px;
+}
+
+#filtre ul{
+   
+   display: inline; 
+}
+
+#filtre ul li{
 list-style-type: none;
 display: inline;
 margin-right: 5px;
-border: 2px solid black;
 border-radius: 10px;
+
 }
 
 .filtreBold{
 font-weight: bold;
 }
 
-#menu_iphone ul li{
+#menu ul li{
 display: inline;
+border: 1px solid grey;
+font-weight: bold;
 }
 
 .introBold{
     font-weight: bold;
+}
+
+
+#filtre .fas{
+    
+    color: #0065FC;
+    background-color: #DEEBFF;
+    border-radius: 100px;
+   
 }
 
 
@@ -261,13 +280,12 @@ figcaption img{
 
 
 
-
  /*-----FIN ACTIVITÉ------*/
 
 /*-----FOOTER------*/
 
 
-.footer_pc{
+footer{
     width: 100%;
     margin: auto;
     display: flex;
@@ -288,123 +306,63 @@ footer ul li{
 
 /*-------------DEBUT ECRAN IPHONE 8--------------- */
 
-@media screen and (min-width:320px) and (max-width:736px){
-   
-    /*HEADER*/ 
-     #header_pc{
-       display: none;
-     }
- 
-     #header_iphone{
-         display: flex;
-         justify-content: space-between;
-         color: #0065FC;
-         font-weight: bold;
-     }
- 
-     #header_iphone ul li {
-         list-style-type: none;
-         display: inline;
-     }
- 
-     #nav_iphone{
-         display: flex;
-         justify-content: space-around;
-     }
- 
-     #nav_iphone a{
-         width:100% ;
-         text-align: center;
-         text-decoration: none;
-         color: #0065FC;
-     }
- 
-     #nav_iphone a:hover{
-         border-bottom: 2px solid #0065FC;
-     }
- 
-  
- 
-    /*FIN HEADER*/ 
- 
-    /*MENU INFO*/
-    #menu_pc{
-        display: none;
-    }
- 
-    #filtre_iphone ul li{
-        list-style-type: none;
-        margin-right: 5px;
-        border: 2px solid #0065FC;
-        border-radius: 10px;
-        width: 50%;
-    }
- 
-    #recherch_iphone button{
-     background-color: #0065FC;
-     border-top-right-radius: 10px;
-     border-bottom-right-radius:10px ;
-     color:white;
-    }
- 
-    .filtreBold{
-        font-weight: bold;
-    }
-    /*FIN MENU INFO*/
- 
- 
-    /*-----HERBERGEMENT------*/
- section{
-     padding: 20px 20px;
- }
-    #mainHebergement{
-       flex-direction: column-reverse;
-    }
+@media screen and (max-width:737px){
     
-    #hebergement{
-        flex-direction: column;
-        width: 100%;
-        margin: auto;
-    }
- 
-    #part1{
-        flex-direction: column;
-    }
- 
-    #part2{
-        flex-direction: column;
-    }
- 
-    #populaire{
-        width: 100%;
-        margin: auto;
-    }
- 
-    /*FIN HEBERGEMENT*/
- 
-     /*ACTIVITES*/
- 
- #activite{
-     flex-direction: column;
- }
-     /*FIN ACTIVITE*/
- 
+    #filtre ul  {
+            
+           display: flex;
+           
+        }
 
-  
+       
 
-  #footer_iphone{
-    text-align: center;
-    flex-direction: column;
-  }
+        #mainHebergement{
+         
+           
+            flex-direction: column-reverse;
+            background-color: #F2F2F2;
+            border-radius: 0px;
+        }
 
-  #footer_iphone h3{
-      text-align: center;
-  }
+        #hebergement{
+            width: 100%;
+            flex-direction: column;
+            background-color: white;
+            border-radius: 0px;
+            
+        }
+
+        #part1{
+            flex-direction: column;
+        }
+
+        #part2{
+            flex-direction: column;
+        }
+
+        #populaire{
+            width: 100%;
+            border-radius: 0px;
+        }
+
+        #activite{
+            flex-direction: column;
+        }
+
+        footer{
+            flex-direction: column-reverse;
+            text-align: center;
+        }
+
+        footer h3{
+            text-align: center;
+        }
+}
+   
  
- 
- }
- 
- /*FIN ECRAN IPHONE 8 */
+    
+/*-------------FIN DEBUT ECRAN IPHONE 8--------------- */
+
 
 
 

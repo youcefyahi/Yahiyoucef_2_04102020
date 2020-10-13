@@ -4,85 +4,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
 </head>
 
 <body>
     <header>
-        <div id="header_pc">
-            <p><img src="images/logo/Reservia@3x.png" width="50px"> </p>
+        
+        <div id="header">
+            <p><img class="reservia" src="images/logo/Reservia@3x.png"> </p>
             <ul>
-                <li>Hébergement</li>
-                <li>Acitvités</li>
+                <li><a href="#hebergemnet">Hebergement</a></li>
+                <li><a href="#activite">Activites</a></li>
                 <li class="inscription">S'inscrire</li>
+                
             </ul>
-        </div>
-        <div id="header_iphone">
-            <p><img src="images/logo/Reservia@3x.png" width="50px"> </p>
-            <ul>
-                <li class="inscription">S'inscrire</li>
-            </ul>
-        </div>
-        <div id="nav_iphone">
-            <a href="#hebergemnet">Hebergement</a>
-            <a href="#activite">Activites</a>
         </div>
     </header>
 
     <section>
         <article>
-            <div id="menu_pc">
-                <div id="intro_pc">
+        
+            <div id="menu">
+                <div id="intro">
                     <p><span class="introBold"> Votre Hébergement pour des vacanse de reve</span><br />En plein centre
                         ville ou en pleine nature</p>
                 </div>
-                <div id="recherche_pc">
-                    <img src="https://img.icons8.com/fluent-systems-filled/24/000000/pointer.png"  /><input type="search" id="site-search" name="q"
-                        aria-label="Search through site content" ><button>recherche</button>
-
-                </div>
-                <div id="filtre_pc">
-                    <ul>
-                        <li class="filtreBold">Filtres</li>
-                        <li><img src="https://img.icons8.com/material/24/000000/cash-.png" />Économie</li>
-                        <li><img src="https://img.icons8.com/officexs/16/000000/family--v2.png" />Familial</li>
-                        <li><img src="https://img.icons8.com/android/24/000000/hearts.png" />Romantique</li>
-                        <li><img src="https://img.icons8.com/metro/26/000000/dog.png" />Animaux autorisé</li>
-                    </ul>
-                </div>
-                <div id="info_pc">
-                    <p><img src="https://img.icons8.com/material-outlined/24/000000/info.png" /> Plus de 500 logements
-                        sont disponibles dans cette ville</p>
-                </div>
-            </div>
-            <div id="menu_iphone">
-                <div id="intro_iphone">
-                    <p><span class="introBold"> Votre Hébergement pour des vacanse de reve</span><br />En plein centre
-                        ville ou en pleine nature</p>
-                </div>
-                <div id="recherch_iphone">
+                <div id="recherche">
                     
-                    <img src="https://img.icons8.com/fluent-systems-filled/24/000000/pointer.png" /><input type="search" id="searchip" name="q"
+                    <i class="fas fa-map-marker-alt"></i> <input type="search" id="searchip" name="q"
                         aria-label="Search through site content"><button>recherche</button>
                 </div>
-                <div id="filtre_iphone">
+                <div id="filtre">
                     <ul>
                         <li class="filtreBold" >Filtre</li>
                     </ul>
                     <ul>
-                        <li><img src="https://img.icons8.com/material/24/000000/cash-.png" />Économie</li>
-                        <li><img src="https://img.icons8.com/officexs/16/000000/family--v2.png" />Familial</li>
+                        <li><i class="fas fa-money-bill-wave"></i> Économie</li>
+                        <li><i class="fas fa-child"></i> Familial</li>
                     </ul>
                     <ul>
-                        <li><img src="https://img.icons8.com/android/24/000000/hearts.png" />Romantique</li>
+                        <li><i class="fas fa-heart"></i> Romantique</li>
                     </ul>
                     <ul>
-                        <li><img src="https://img.icons8.com/metro/26/000000/dog.png" />Animaux autorisé</li>
+                        <li><i class="fas fa-dog"></i> Animaux autorisé</li>
                     </ul>
                 </div>
-                <div id="info_iphone">
+                <div id="info">
                     <p><img src="https://img.icons8.com/material-outlined/24/000000/info.png" /> Plus de 500 logements
                         sont disponibles dans cette ville</p>
                 </div>
@@ -202,8 +172,8 @@
     </section>
 
     
-    <footer>
-        <div id="footer_iphone" class="footer_pc">
+    <footer id="footer">
+       
         <div id="apropos">
             <h3>A propos</h3>
             <ul>
@@ -226,7 +196,7 @@
                 <li>Nous contacter</li>
             </ul>
         </div>
-        </div>
+        
     </footer>
 </body>
 
