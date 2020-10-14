@@ -8,30 +8,28 @@ font-family: 'Raleway', sans-serif;
 }
 
 header {
-    display: flex;
+  display: flex;
     justify-content: space-between;
 }
-#header{
+
+#truc{
     display: flex;
-    justify-content: space-between;
 }
+
+#truc ul li{
+    display: inline;
+}
+
+#mabite ul li a{
+    text-decoration: none;
+}
+
 
 .reservia{
     max-width: 80px;
     
 }
 
-#header ul li {
-    list-style-type: none;
-    display: inline;
-    margin-right: 10px;
-    
-}
-
-#header ul li:hover{
-    border-top: 2px solid #0065FC;
-    color:  #0065FC;
-}
 
 .inscription{
     font-weight: bold;
@@ -324,8 +322,16 @@ footer ul li{
    
 
     p{
-        color: green;
+        color: red;
     }
+
+     #mabite{
+        display: block;
+    }
+
+  
+
+
     #filtre ul  {
             
            display: flex;
