@@ -1,173 +1,197 @@
-body{
-
-margin: auto;
-padding:auto;
-width: 100%;
-font-family: 'Raleway', sans-serif;
-
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: auto;
+    padding: auto;
+    width: 100%;
 }
 
 header {
-  display: flex;
+    width: 91.5%;
+    margin: auto;
+    display: flex;
     justify-content: space-between;
 }
 
-#truc{
+header img {
+    height: 50px;
+}
+
+#nav {
+    width: 100%;
     display: flex;
+    justify-content: space-between;
 }
 
-#truc ul li{
-    display: inline;
+#sousNav {
+    display: flex;
+    width: 100%;
 }
 
-#mabite ul li a{
-    text-decoration: none;
+#sousNav p {
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
-
-.reservia{
-    max-width: 80px;
-    
+#first:hover {
+    border-top: 2px solid #0065FC;
 }
 
+#second:hover {
+    border-top: 2px solid #0065FC;
+}
 
-.inscription{
+#last {
     font-weight: bold;
     color: #0065FC;
 }
-
-
 
 
 /*HEADER*/
 
+
 /*------MENU INFO-------*/
 
-
-#recherche{
-display: flex;
-
+#menu {
+    width: 94%;
+    margin: auto;
 }
 
-
-
-
-#recherche button{
-background-color: #0065FC;
-border-top-right-radius: 10px;
-border-bottom-right-radius:10px ;
-color:white;
-
-
+#recherche {
+    display: flex;
 }
 
-#filtre{
+#recherche button {
+    padding: 5px 20px 5px 12px;
+    background-color: #0065FC;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 1px solid #0065FC;
+    color: white;
+}
+
+.position {
+    padding: 10px 10px 10px 10px;
+    background-color: #F2F2F2;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+#recherche button i {
+    display: none;
+}
+
+#filtre {
     margin-top: 30px;
 }
 
-#filtre ul{
-   
-   display: inline; 
+#filtre ul {
+    display: inline;
 }
 
-#filtre ul li{
-list-style-type: none;
-display: inline;
-margin-right: 5px;
-border-radius: 10px;
-
+#filtre ul li {
+    list-style-type: none;
+    display: inline;
+    margin-right: 5px;
 }
 
-.filtreBold{
-font-weight: bold;
+#filtre ul li i {
+    margin-right: 10px;
+    color: #0065FC;
+    background-color: #DEEBFF;
+    border-radius: 100%;
+    padding: 15px 15px 15px 15px;
 }
 
-#menu ul li{
-display: inline;
-border: 1px solid grey;
-font-weight: bold;
+.famillial {
+    margin-left: 15px;
 }
 
-.introBold{
+.filtreBorder {
+    padding: 10px 10px 10px 0px;
+    border: 2px solid black;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+#menu ul li {
+    display: inline;
     font-weight: bold;
 }
 
+.introBold {
+    font-weight: bold;
+}
 
-#filtre .fas{
-    
+#info p i {
     color: #0065FC;
-    background-color: #DEEBFF;
-    border-radius: 100px;
-   
 }
 
 
-   /*-----HERBERGEMENT------*/
+/*-----FIN MENU INFO------*/
 
 
-   section{
+/*-----HERBERGEMENT------*/
+
+section {
     padding: 0px 20px 0px 20px;
-   }
-
-#mainHebergement{
-    margin: auto;
-    display: flex;
-    width: 100%;
-    
-    
-    
 }
 
-#hebergement{
+#mainHebergement {
+    margin: auto;
+    padding: 20px 20px 20px 20px;
+    display: flex;
+    width: 94%;
+}
+
+#hebergement {
     padding: 10px 15px;
-    background-color:#F2F2F2 ;
+    background-color: #F2F2F2;
     width: 65%;
     margin-right: 10px;
     border-radius: 20px;
- 
 }
 
-#hebergement h2{
-    
-   font-weight: bold;
-
+#hebergement h2 {
+    font-weight: bolder;
 }
 
 #hebergement p {
     font-weight: bold;
 }
 
-#part1{
-    
+#part1 {
     display: flex;
     justify-content: space-between;
-   
 }
 
-#part2{
+#part1 img {
+    border-radius: 10px;
+    width: 220px;
+    height: 120px;
+}
+
+#part2 {
     display: flex;
     justify-content: space-between;
-    
 }
 
-figure{
+#part2 img {
+    border-radius: 10px;
+    width: 220px;
+    height: 120px;
+}
+
+figure {
     box-shadow: 2px 2px 2px 2px grey;
     border: thin white solid;
-    padding:5px;
+    padding: 5px;
     border-radius: 10px;
     background-color: white;
-   
 }
 
-figure img{
-    max-width: 220px;
-    max-height: 150px;
-
-}
-
-
-figcaption{
-  
+figcaption {
     background-color: white;
     color: black;
     font: italic smaller sans-serif;
@@ -175,236 +199,333 @@ figcaption{
     text-align: left;
 }
 
-figcaption img{
-    max-width: 50px;
-    max-height: 50px;
-}
-
-.titreFig{
+.titreFig {
     font-weight: bold;
 }
- 
-#populaire{
+
+.bold {
+    font-weight: bold;
+    color: red;
+}
+
+
+/*--------POPULAIRE--------*/
+
+#titrePopulaire {
+    display: flex;
+    justify-content: space-between;
+}
+
+#titrePopulaire i {
+    width: 50px;
+    margin-top: 25px;
+}
+
+#populaire {
     padding: 20px 5px 10px 5px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin-left: 15px;
     width: 30%;
-    background-color:#F2F2F2 ;
+    background-color: #F2F2F2;
     border-radius: 20px;
-    
-    
 }
 
-#populaire .etoile{
- margin-top: 10px;
+#populaire .etoile {
+    margin-top: 10px;
 }
 
-.etoileBleu{
+.etoileBleu {
     color: #0065FC;
 }
 
-.etoileGris{
+.etoileGris {
     color: #F2F2F2;
 }
 
-
-#populaire h2{
+#populaire h2 {
     font-weight: bold;
-    
 }
 
-
-#populaire figure{
-
+#populaire figure {
     box-shadow: 2px 2px 2px 2px grey;
     border: thin white solid;
-    padding:5px;
+    padding: 5px;
     border-radius: 10px;
     background-color: white;
     display: flex;
 }
 
-#populaire figure img{
-    max-width: 220px;
-    max-height: 200px;
+#populaire figure img {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 100px;
+    height: 120px;
 }
 
-
-#populaire figcaption{
-    
-    background-color: white;
-    color: black;
-    font: italic smaller sans-serif;
-    padding: 3px;
-    
-}
-
-#populaire figcaption img{
+#populaire figcaption img {
     margin-top: 50px;
 }
 
+h4 {
+    margin-top: 30px;
+    margin-left: 45px;
+}
 
 
-
-   /*-----FIN HERBERGEMENT------*/
-
-
-   /*-----ACTIVITÉ------*/
+/*--------FIN POPULAIRE--------*/
 
 
-   #main_activite{
-       margin: auto;
-       padding: 20px;
-   }
+/*-----FIN HERBERGEMENT------*/
 
 
-   #activite{
-       margin: auto;
-       display: flex;
-       justify-content: space-between;
-       width: 100%;
-   }
+/*-----ACTIVITÉ------*/
 
+#main_activite {
+    margin: auto;
+    width: 100%;
+}
 
-   #activite figure{
-   
-    box-shadow: 10px 5px 5px 5px #F2F2F2;
+#main_activite h2 {
+    margin-left: 40px;
+}
+
+#activite {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#activite figure {
+    box-shadow: 3px 3px 3px 3px #F2F2F2;
     text-align: center;
     border-radius: 10px;
-  
-   }
+}
 
-   #activite figure img{
-    max-width: 220px;
-    max-height: 200px;
-   }
+.figActivité figure img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 220px;
+    height: 150px;
+}
 
-   #activite figure figcaption{
+.imgLongue {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 220px;
+    height: 350px;
+}
+
+#activite figure figcaption {
     background-color: white;
-    color: black;
-    font: italic smaller sans-serif;
+    font-weight: bold;
     padding: 3px;
-   }
+}
 
 
+/*-----FIN ACTIVITÉ------*/
 
- /*-----FIN ACTIVITÉ------*/
+
+/*----MENU INFO--------*/
+
+
+/*-----FIN MENU INFO-----*/
+
 
 /*-----FOOTER------*/
 
-
-footer{
+footer {
     width: 100%;
     margin: auto;
-    display: flex;
-    justify-content: space-around;
     background-color: #F2F2F2;
-   
 }
 
-footer h3{
+#mainFooter {
+    width: 70%;
+    margin-left: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pied ul li {
+    margin-bottom: 8px;
+}
+
+footer h3 {
     font-weight: bold;
     text-align: left;
     margin-left: 40px;
-    
 }
-footer ul li{
+
+footer ul li {
     list-style-type: none;
 }
 
+
 /*-----FIN FOOTER------*/
 
-/*-------------DEBUT ECRAN IPHONE 8--------------- */
 
-@media screen and (max-width:1024px){
-   
+/*-------------RESPONSIVE SMARTPHONE VERTICAL-------------- */
 
-    p{
-        color: red;
+@media screen and (max-width:812px) {
+    body {
+        max-width: 812px;
+        margin: auto;
     }
-
-     #mabite{
-        display: block;
+    /*----------HEADER-----------*/
+    header {
+        width: 90%;
+        margin: auto;
     }
-
-  
-
-
-    #filtre ul  {
-            
-           display: flex;
-           
-        }
-
-       
-
-        #mainHebergement{
-         
-           
-            flex-direction: column-reverse;
-            background-color: #F2F2F2;
-            border-radius: 0px;
-        }
-
-        #hebergement{
-            width: 100%;
-            flex-direction: column;
-            background-color: white;
-            border-radius: 0px;
-            
-        }
-
-        #part1{
-            flex-direction: column;
-            
-        }
-
-        #part2{
-            flex-direction: column;
-        }
-
-        #populaire{
-           padding: 20px 20px;
-            width: 100%;
-            border-radius: 0px;
-        }
-
-        #populaire figure{
-
-            margin-top: 50px;
-            margin: auto;
-            width: 100%;
-            display: flex;
-            margin-top: 20px;
-         
-        }
-
-     
-       
-
-        #activite{
-            flex-direction: column;
-        }
-
-        footer{
-            flex-direction: column-reverse;
-            text-align: center;
-        }
-
-        footer h3{
-            text-align: center;
-        }
+    #nav {
+        width: 100%;
+        margin: auto;
+    }
+    #sousNav {
+        width: 100%;
+        margin: auto;
+        margin-top: 100px;
+        margin-right: 10px;
+    }
+    #sousNav #first {
+        width: 50%;
+    }
+    #sousNav #first:hover {
+        text-decoration: none;
+    }
+    #sousNav #second {
+        width: 50%;
+    }
+    #sousNav #second:hover {
+        text-decoration: none;
+    }
+    #sousNav #first .min {
+        margin-right: 20px;
+    }
+    #sousNav #first .min:hover {
+        border-bottom: 2px solid #0065FC;
+    }
+    #sousNav #second .tru {
+        margin-left: 20px;
+    }
+    #last {
+        margin-right: 44px;
+    }
+    header img {
+        height: 35px;
+    }
+    /*----------FIN HEADER-----------*/
+    /*-------MENU INFO------*/
+    #filtre ul {
+        display: flex;
+    }
+    #filtre ul li i {
+        padding: 5px 5px 5px 5px;
+    }
+    .filtreBorder {
+        padding: 2px 2px 2px 2px;
+    }
+    .rechercheHiden {
+        display: none;
+    }
+    #recherche button i {
+        display: initial;
+    }
+    /*-------FIN MENU INFO------*/
+    section {
+        width: 100%;
+        padding: 50px 0px 50px 0px;
+    }
+    /*-------HEBERGEMENT--------*/
+    #mainHebergement {
+        margin: auto;
+        padding: initial;
+        flex-direction: column-reverse;
+        background-color: #F2F2F2;
+        border-radius: 0px;
+        width: 98%;
+    }
+    #hebergement {
+        width: 100%;
+        padding: initial;
+        margin-top: 40px;
+        flex-direction: column;
+        background-color: white;
+        border-radius: 0px;
+    }
+    #part1 {
+        flex-direction: column;
+        padding: 10px;
+    }
+    #part1 figure {
+        margin: auto;
+        width: 95%;
+        margin-bottom: 25px;
+    }
+    #part1 img {
+        width: 100%;
+        height: 130px;
+    }
+    #part2 {
+        flex-direction: column;
+        padding: 10px;
+    }
+    #part2 figure {
+        margin: auto;
+        width: 95%;
+        margin-bottom: 25px;
+    }
+    #part2 img {
+        width: 100%;
+        height: 130px
+    }
+    /*-------FIN HEBERGEMENT--------*/
+    /*-------POPULAIRE--------*/
+    #populaire {
+        padding-bottom: 15px;
+        padding: initial;
+        width: 100%;
+        margin: auto;
+        border-radius: 0px;
+    }
+    #populaire figure {
+        margin: auto;
+        width: 90%;
+        padding: 5px 5px 5px 5px;
+        display: flex;
+        margin-top: 20px;
+    }
+    /*-------FIN POPULAIRE--------*/
+    /*-------ACTIVITER--------*/
+    #main_activite {
+        width: initial;
+    }
+    #activite {
+        flex-direction: column;
+        width: initial;
+    }
+    #activite figure img {
+        width: 100%;
+        height: 130px
+    }
+    /*-------FIN ACTIVITER--------*/
+    footer {
+        width: 98%;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    #mainFooter {
+        width: 98%;
+        margin: initial;
+        text-align: left;
+        flex-direction: column;
+    }
+    footer h3 {
+        text-align: left;
+    }
 }
 
 
-
-   
- 
-    
-/*-------------FIN DEBUT ECRAN IPHONE 8--------------- */
-
-
-
-
+/*-------------RESPONSIVE SMARTPHONE VERTICAL--------------- */
