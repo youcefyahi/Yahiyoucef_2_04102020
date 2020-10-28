@@ -1,7 +1,6 @@
 body {
     font-family: 'Raleway', sans-serif;
     margin: auto;
-    padding: auto;
     width: 100%;
 }
 
@@ -163,7 +162,7 @@ section {
 
 #part1 {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 #part1 img {
@@ -174,7 +173,7 @@ section {
 
 #part2 {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 #part2 img {
@@ -369,9 +368,9 @@ footer ul li {
 
 /*-------------RESPONSIVE SMARTPHONE VERTICAL-------------- */
 
-@media screen and (max-width:812px) {
+@media screen and (max-width:1024px) {
     body {
-        max-width: 812px;
+        max-width: 1024px;
         margin: auto;
     }
     /*----------HEADER-----------*/
