@@ -7,41 +7,46 @@ body {
 header {
     width: 91.5%;
     margin: auto;
-    display: flex;
-    justify-content: space-between;
 }
 
-header img {
-    height: 50px;
-}
-
-#nav {
+nav {
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
-#sousNav {
-    display: flex;
-    width: 100%;
-}
-
-#sousNav p {
+nav ul li {
+    display: inline;
     margin-left: 10px;
-    margin-right: 10px;
+    padding-top: 13px;
 }
 
-#first:hover {
-    border-top: 2px solid #0065FC;
+nav ul li a {
+    text-decoration: none;
 }
 
-#second:hover {
-    border-top: 2px solid #0065FC;
-}
-
-#last {
-    font-weight: bold;
+nav ul li a:hover {
     color: #0065FC;
+    font-weight: 600;
+}
+
+nav .a:hover {
+    border-top: 2px solid #0065FC;
+}
+
+nav .b:hover {
+    border-top: 2px solid #0065FC;
+    color: #0065FC;
+}
+
+nav .c {
+    color: #0065FC;
+    font-weight: bold;
+}
+
+nav img {
+    max-width: 100px;
+    max-height: 100px;
 }
 
 
@@ -80,25 +85,30 @@ header img {
 }
 
 #filtre {
+    width: 100%;
+    margin: auto;
     margin-top: 30px;
+    text-align: left;
 }
 
 #filtre ul {
+    margin: auto;
     display: inline;
+    padding-left: 12px;
 }
 
 #filtre ul li {
     list-style-type: none;
-    display: inline;
     margin-right: 5px;
 }
 
 #filtre ul li i {
-    margin-right: 10px;
     color: #0065FC;
     background-color: #DEEBFF;
     border-radius: 100%;
     padding: 15px 15px 15px 15px;
+    position: relative;
+    right: 5px;
 }
 
 .famillial {
@@ -107,11 +117,8 @@ header img {
 
 .filtreBorder {
     padding: 10px 10px 10px 0px;
-    border: 2px solid black;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
+    border: 2px solid #f2f2f2;
+    border-radius: 50px;
 }
 
 #menu ul li {
@@ -137,9 +144,14 @@ section {
     padding: 0px 20px 0px 20px;
 }
 
+article {
+    width: 100%;
+    margin: auto;
+}
+
 #mainHebergement {
     margin: auto;
-    padding: 20px 20px 20px 20px;
+    padding: 23px;
     display: flex;
     width: 94%;
 }
@@ -154,6 +166,7 @@ section {
 
 #hebergement h2 {
     font-weight: bolder;
+    padding-left: 30px;
 }
 
 #hebergement p {
@@ -166,6 +179,7 @@ section {
 }
 
 #part1 img {
+    object-fit: cover;
     border-radius: 10px;
     width: 220px;
     height: 120px;
@@ -177,12 +191,13 @@ section {
 }
 
 #part2 img {
+    object-fit: cover;
     border-radius: 10px;
     width: 220px;
     height: 120px;
 }
 
-figure {
+#hebergement figure {
     box-shadow: 2px 2px 2px 2px grey;
     border: thin white solid;
     padding: 5px;
@@ -190,10 +205,9 @@ figure {
     background-color: white;
 }
 
-figcaption {
+#hebergement figcaption {
     background-color: white;
     color: black;
-    font: italic smaller sans-serif;
     padding: 3px;
     text-align: left;
 }
@@ -204,7 +218,6 @@ figcaption {
 
 .bold {
     font-weight: bold;
-    color: red;
 }
 
 
@@ -215,16 +228,21 @@ figcaption {
     justify-content: space-between;
 }
 
+#titrePopulaire h2 {
+    padding-left: 35px;
+}
+
 #titrePopulaire i {
     width: 50px;
-    margin-top: 25px;
+    margin-top: 20px;
+}
+
+.fa-chart-line {
+    font-size: 20px;
 }
 
 #populaire {
     padding: 20px 5px 10px 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     margin-left: 15px;
     width: 30%;
     background-color: #F2F2F2;
@@ -232,7 +250,7 @@ figcaption {
 }
 
 #populaire .etoile {
-    margin-top: 10px;
+    padding-top: 40px;
 }
 
 .etoileBleu {
@@ -257,13 +275,23 @@ figcaption {
 }
 
 #populaire figure img {
+    object-fit: cover;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     width: 100px;
     height: 120px;
 }
 
-#populaire figcaption img {
+#populaire figure figcaption {
+    padding-left: 10px;
+    width: 50%;
+}
+
+#populaire figure figcaption .hotelPopulaire {
+    font-weight: bold;
+}
+
+#populaire figure figcaption img {
     margin-top: 50px;
 }
 
@@ -291,36 +319,60 @@ h4 {
 }
 
 #activite {
+    width: 100%;
     margin: auto;
     display: flex;
+    padding-bottom: 70px;
+    justify-content: flex-start;
     justify-content: space-between;
-    width: 100%;
 }
 
 #activite figure {
     box-shadow: 3px 3px 3px 3px #F2F2F2;
     text-align: center;
     border-radius: 10px;
+    margin-top: 70px;
+    margin: 30px;
 }
 
 .figActivité figure img {
+    object-fit: cover;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    width: 220px;
-    height: 150px;
+}
+
+.fort {
+    width: 312px;
+    height: 220px;
+}
+
+.iles {
+    width: 320px;
+    height: 125px;
+}
+
+.notreDame {
+    width: 320px;
+    height: 170px;
+}
+
+.parc {
+    width: 320px;
+    height: 170px;
 }
 
 .imgLongue {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    width: 220px;
-    height: 350px;
+    width: 280px;
+    height: 400px;
 }
 
 #activite figure figcaption {
     background-color: white;
     font-weight: bold;
-    padding: 3px;
+    padding: 10px;
+    text-align: left;
 }
 
 
@@ -368,9 +420,10 @@ footer ul li {
 
 /*-------------RESPONSIVE SMARTPHONE VERTICAL-------------- */
 
-@media screen and (max-width:1024px) {
+@media screen and (min-width:320px) and (max-width:667px) {
     body {
-        max-width: 1024px;
+        max-width: 666px;
+        min-width: 320px;
         margin: auto;
     }
     /*----------HEADER-----------*/
@@ -378,42 +431,41 @@ footer ul li {
         width: 90%;
         margin: auto;
     }
-    #nav {
+    nav {
         width: 100%;
         margin: auto;
     }
-    #sousNav {
-        width: 100%;
-        margin: auto;
-        margin-top: 100px;
-        margin-right: 10px;
-    }
-    #sousNav #first {
+    nav .a {
         width: 50%;
+        position: relative;
+        top: 90px;
+        right: 170px;
+        border-bottom: 2px solid #f2f2f2;
+        padding-left: 50px;
+        padding-right: 30px;
+        padding-bottom: 10px;
     }
-    #sousNav #first:hover {
-        text-decoration: none;
-    }
-    #sousNav #second {
-        width: 50%;
-    }
-    #sousNav #second:hover {
-        text-decoration: none;
-    }
-    #sousNav #first .min {
-        margin-right: 20px;
-    }
-    #sousNav #first .min:hover {
+    nav .a:hover {
+        border-top: initial;
         border-bottom: 2px solid #0065FC;
     }
-    #sousNav #second .tru {
-        margin-left: 20px;
+    nav .b {
+        width: 50%;
+        border-bottom: 2px solid #f2f2f2;
+        position: relative;
+        top: 71px;
+        padding-right: 99px;
+        padding-left: 60px;
+        padding-bottom: 10px;
     }
-    #last {
-        margin-right: 44px;
+    nav .b:hover {
+        border-top: initial;
+        border-bottom: 2px solid #0065FC;
     }
-    header img {
-        height: 35px;
+    nav .c {
+        color: #0065FC;
+        position: relative;
+        left: 140px;
     }
     /*----------FIN HEADER-----------*/
     /*-------MENU INFO------*/
@@ -528,3 +580,123 @@ footer ul li {
 
 
 /*-------------RESPONSIVE SMARTPHONE VERTICAL--------------- */
+
+
+/*-------------RESPONSIVE TABLETTE--------------- */
+
+@media screen and (min-width:667px) and (max-width:1024px) {
+    body {
+        max-width: 1023px;
+        min-width: 667px;
+        margin: auto;
+    }
+    /*-------MENU INFO------*/
+    #filtre ul li i {
+        padding: 5px 5px 5px 5px;
+    }
+    .filtreBorder {
+        padding: 2px 2px 2px 2px;
+    }
+    .rechercheHiden {
+        display: none;
+    }
+    #recherche button i {
+        display: initial;
+    }
+    /*-------FIN MENU INFO------*/
+    section {
+        width: 100%;
+        padding: 50px 0px 50px 0px;
+    }
+    /*-------HEBERGEMENT--------*/
+    #mainHebergement {
+        margin: auto;
+        padding: initial;
+        flex-direction: column-reverse;
+        background-color: #F2F2F2;
+        border-radius: 0px;
+        width: 98%;
+    }
+    #hebergement {
+        width: 100%;
+        padding: initial;
+        padding-top: 50px;
+        border-radius: 0px;
+        background-color: white;
+    }
+    #part1 {
+        padding: 10px;
+    }
+    #part1 figure {
+        margin: auto;
+        margin: 5px;
+        width: 95%;
+        margin-bottom: 25px;
+    }
+    #part1 img {
+        width: 100%;
+        height: 130px;
+    }
+    #part2 {
+        padding: 10px;
+    }
+    #part2 figure {
+        margin: auto;
+        margin: 5px;
+        width: 95%;
+        margin-bottom: 25px;
+    }
+    #part2 img {
+        object-fit: cover;
+        width: 100%;
+        height: 130px
+    }
+    /*-------FIN HEBERGEMENT--------*/
+    /*-------POPULAIRE--------*/
+    #populaire {
+        padding-bottom: 15px;
+        padding: initial;
+        width: 100%;
+        margin: auto;
+        border-radius: 0px;
+        border: 2px solid black;
+    }
+    #populaire figure {
+        display: flex;
+        width: 60%;
+        margin: auto;
+        padding: 5px 5px 5px 5px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border: 2px solid black;
+    }
+    #populaire figure img {
+        width: 80%;
+    }
+    /*-------FIN POPULAIRE--------*/
+    /*-------ACTIVITER--------*/
+    #main_activite {
+        width: initial;
+    }
+    #activite {
+        flex-direction: column;
+        width: initial;
+    }
+    .figActivité {
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+    }
+    .figActivité figure {
+        width: 80%;
+    }
+    #activite figure img {
+        object-fit: cover;
+        width: 100%;
+        height: 130px
+    }
+    /*-------FIN ACTIVITER--------*/
+}
+
+
+/*-------------RESPONSIVE TABLETTE--------------- */
