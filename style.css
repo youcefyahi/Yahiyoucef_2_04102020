@@ -30,16 +30,15 @@ nav ul li a:hover {
     font-weight: 600;
 }
 
-nav .a:hover {
+nav #first:hover {
     border-top: 2px solid #0065FC;
 }
 
-nav .b:hover {
+nav #second:hover {
     border-top: 2px solid #0065FC;
-    color: #0065FC;
 }
 
-nav .c {
+nav #last {
     color: #0065FC;
     font-weight: bold;
 }
@@ -55,6 +54,14 @@ nav img {
 
 /*------MENU INFO-------*/
 
+#introBold {
+    font-weight: bold;
+}
+
+#sousIntro {
+    font-size: small;
+}
+
 #menu {
     width: 94%;
     margin: auto;
@@ -62,6 +69,11 @@ nav img {
 
 #recherche {
     display: flex;
+}
+
+input {
+    font-weight: bold;
+    padding-left: 10px;
 }
 
 #recherche button {
@@ -73,7 +85,8 @@ nav img {
     color: white;
 }
 
-.position {
+.fa-map-marker-alt {
+    font-size: small;
     padding: 10px 10px 10px 10px;
     background-color: #F2F2F2;
     border-top-left-radius: 12px;
@@ -106,7 +119,7 @@ nav img {
     color: #0065FC;
     background-color: #DEEBFF;
     border-radius: 100%;
-    padding: 15px 15px 15px 15px;
+    padding: 15px;
     position: relative;
     right: 5px;
 }
@@ -126,12 +139,13 @@ nav img {
     font-weight: bold;
 }
 
-.introBold {
-    font-weight: bold;
-}
-
-#info p i {
+#info .fa-info {
     color: #0065FC;
+    font-size: small;
+    border: 2px solid #F2F2F2;
+    border-radius: 100%;
+    padding: 6px 9px 6px 9px;
+    margin-right: 10px;
 }
 
 
@@ -216,8 +230,9 @@ article {
     font-weight: bold;
 }
 
-.bold {
-    font-weight: bold;
+#afficher {
+    margin-top: 30px;
+    margin-left: 45px;
 }
 
 
@@ -230,14 +245,12 @@ article {
 
 #titrePopulaire h2 {
     padding-left: 35px;
-}
-
-#titrePopulaire i {
-    width: 50px;
-    margin-top: 20px;
+    font-weight: bold;
 }
 
 .fa-chart-line {
+    width: 50px;
+    margin-top: 20px;
     font-size: 20px;
 }
 
@@ -259,10 +272,6 @@ article {
 
 .etoileGris {
     color: #F2F2F2;
-}
-
-#populaire h2 {
-    font-weight: bold;
 }
 
 #populaire figure {
@@ -289,15 +298,6 @@ article {
 
 #populaire figure figcaption .hotelPopulaire {
     font-weight: bold;
-}
-
-#populaire figure figcaption img {
-    margin-top: 50px;
-}
-
-h4 {
-    margin-top: 30px;
-    margin-left: 45px;
 }
 
 
@@ -362,6 +362,7 @@ h4 {
 }
 
 .imgLongue {
+    object-fit: cover;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     width: 280px;
@@ -400,8 +401,9 @@ footer {
     justify-content: space-between;
 }
 
-.pied ul li {
+.footerElement ul li {
     margin-bottom: 8px;
+    list-style-type: none;
 }
 
 footer h3 {
@@ -410,19 +412,15 @@ footer h3 {
     margin-left: 40px;
 }
 
-footer ul li {
-    list-style-type: none;
-}
-
 
 /*-----FIN FOOTER------*/
 
 
 /*-------------RESPONSIVE SMARTPHONE VERTICAL-------------- */
 
-@media screen and (min-width:320px) and (max-width:667px) {
+@media screen and (min-width:320px) and (max-width:426px) {
     body {
-        max-width: 666px;
+        max-width: 425px;
         min-width: 320px;
         margin: auto;
     }
@@ -434,8 +432,13 @@ footer ul li {
     nav {
         width: 100%;
         margin: auto;
+        margin-bottom: 20px;
     }
-    nav .a {
+    nav img {
+        padding-top: 30px;
+        height: 50px;
+    }
+    nav #first {
         width: 50%;
         position: relative;
         top: 90px;
@@ -445,27 +448,27 @@ footer ul li {
         padding-right: 30px;
         padding-bottom: 10px;
     }
-    nav .a:hover {
+    nav #first:hover {
         border-top: initial;
         border-bottom: 2px solid #0065FC;
     }
-    nav .b {
+    nav #second {
         width: 50%;
         border-bottom: 2px solid #f2f2f2;
         position: relative;
         top: 71px;
-        padding-right: 99px;
-        padding-left: 60px;
+        padding-right: 60px;
+        padding-left: 80px;
         padding-bottom: 10px;
     }
-    nav .b:hover {
+    nav #second:hover {
         border-top: initial;
         border-bottom: 2px solid #0065FC;
     }
-    nav .c {
+    nav #last {
         color: #0065FC;
         position: relative;
-        left: 140px;
+        left: 120px;
     }
     /*----------FIN HEADER-----------*/
     /*-------MENU INFO------*/
@@ -584,10 +587,10 @@ footer ul li {
 
 /*-------------RESPONSIVE TABLETTE--------------- */
 
-@media screen and (min-width:667px) and (max-width:1024px) {
+@media screen and (min-width:426px) and (max-width:1024px) {
     body {
-        max-width: 1023px;
-        min-width: 667px;
+        max-width: 1024px;
+        min-width: 426px;
         margin: auto;
     }
     /*-------MENU INFO------*/
@@ -671,7 +674,7 @@ footer ul li {
         border: 2px solid black;
     }
     #populaire figure img {
-        width: 80%;
+        width: 75%;
     }
     /*-------FIN POPULAIRE--------*/
     /*-------ACTIVITER--------*/
